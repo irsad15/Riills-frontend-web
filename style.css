@@ -1086,3 +1086,53 @@ a {
     font-size: 20px;
     color: rgb(255, 255, 255);
   }
+}
+  .custom-text-section {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  /* Flexbox for small screens */
+  .contact-section .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-section .contact-info p {
+    margin-right: 20px;
+  }
+
+  @media (min-width: 768px) {
+    /* Stack vertically on larger screens */
+    .contact-section .contact-info {
+      flex-direction: column;
+    }
+
+    .contact-section .contact-info p {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .custom-text-section {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .custom-text-section {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
